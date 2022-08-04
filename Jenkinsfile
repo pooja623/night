@@ -4,7 +4,7 @@ pipeline {
     }
     stages {
         stage('removing old files') {
-            sh"sudo rm -rvf /var/www/html/POS-Applicationname/*"
+            sh "sudo rm -rvf /var/www/html/POS-Applicationname/laravel-pos/*"
 
         }
     }
