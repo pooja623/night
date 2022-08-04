@@ -12,7 +12,7 @@ pipeline {
     STAGE('Cloning repo') {
         steps{
             sh "cd /var/www/html/POS-Applicationname"
-            sh "sudo git clone https://github.com/pooja623/POS-Applicationname"
+            sh "sudo git clone  https://github.com/pooja623/night.git "
             sh "sudo chown -R www-data:www-data /var/www/html/laravel-pos"
             sh "sudo chmod -R 775 /var/www/html/laravel-pos/storage"
             sh "cd laravel-pos"
