@@ -15,20 +15,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-              sh 'sudo ssh deployment-user@192.168.139.135'
-              sh 'sudo ssh-copy-id deployment-user@192.168.139.135'
-              sh 'cd'
-              sh 'pwd'
-              sh 'whoami'
-              sh 'ls'
-              sh 'source venv/bin/activate'
-              sh 'cd Polling'
-              sh 'git pull origin main'
-              sh 'pip install -r requirement.txt --no-warn-script-location'
-              sh 'python manage.py migrate'
-              sh 'deactivate'
-              sh 'sudo systemctl restart nginx'
-              sh 'sudo systemctl restart gunicorn'  
+             sh "echo"
                
             
            
